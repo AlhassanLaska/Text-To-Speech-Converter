@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    overflow: hidden;
     box-sizing: border-box;
 }
 
@@ -37,7 +38,6 @@ textarea{
     outline: 0;
     padding: 20px;
     border-radius: 10px;
-    resize: none;
     margin-bottom: 30px; 
 }
 textarea::placeholder{
@@ -55,6 +55,7 @@ textarea::placeholder{
 button{
     background: #ff2963;
     color: #fff;
+    display: flex;
     font-size: 16px;
     padding: 10px 30px;
     border-radius: 35px;
@@ -73,4 +74,47 @@ select{
     border: 0;
     border-radius: 35px;
     appearance: large;
+}
+
+@media (max-width: 600px) {
+    #hero h1{
+        font-size: 45px;
+        font-weight: 500;
+        margin-top: -50px;
+        margin-bottom: 50px;
+        padding: 0 0 0 30px;
+    }
+    
+    #hero h1 span{
+        color: #ff2963;
+    }
+    
+    textarea{
+        width: 450px;
+        height: 150px;
+    }
+
+    #row{
+        width: 250px;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    button{
+        background: #ff2963;
+        color: #fff;
+        display: flex;
+        font-size: 16px;
+        padding: 10px 30px;
+        border-radius: 35px;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+    }
+    
+    select{
+        height: 40px;
+        width: 150px;
+    }
 }
